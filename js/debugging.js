@@ -8,13 +8,14 @@ function getAge()
 {
 var myAge=document.getElementById("myAge").value; //de eerste variabele is voor je aangemaakt...
 
-    if() //vul de juiste voorwaarde in!
+    if(myAge < 10) //vul de juiste voorwaarde in!
         {
-             //kies code hieronder
+            document.getElementById("myAge").value = 100;   
         }
     else
         {
-             //kies code hieronder
+            document.getElementById("myAge").value = 50;
+            //kies code hieronder
         }
 }
 
@@ -62,7 +63,7 @@ function myFirstLoop()
 {
     var i; //altijd variabelen declareren, boven de for loop is netter dan erin!
 
-    for (statement1; statement2; statement3) {
+    for (var i=0; i<10; i++) {
         console.log(i); //met console.log zie je de waarde van i terug komen in je watch window (links) en in je console in chrome (via inspect)
       }
 }
